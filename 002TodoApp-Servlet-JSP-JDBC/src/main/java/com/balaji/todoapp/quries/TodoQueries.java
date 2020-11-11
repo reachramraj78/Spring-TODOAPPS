@@ -1,0 +1,10 @@
+package com.balaji.todoapp.quries;
+
+public interface TodoQueries {
+
+	String LOGIN_QUERY = "SELECT COUNT(*) FROM USER_TAB WHERE USERNAME=? AND PASSWORD=?";
+	String SELECT_ALL_QUERY = "SELECT * FROM TODO_TAB";
+	String DELETE_QUERY = "DELETE FROM TODO_TAB WHERE ID = ?";
+	String INSERT_QUERY = "INSERT INTO TODO_TAB(NAME,CATEGORY) VALUES(?,?)";
+
+}
